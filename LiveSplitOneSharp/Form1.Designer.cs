@@ -43,6 +43,10 @@
             this.lblSOB = new System.Windows.Forms.Label();
             this.lblPTS = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.lblComparison = new System.Windows.Forms.Label();
+            this.graphPanel1 = new LiveSplitOneSharp.GraphPanel();
+            this.button8 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblTimer
@@ -50,7 +54,7 @@
             this.lblTimer.AutoSize = true;
             this.lblTimer.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTimer.ForeColor = System.Drawing.Color.White;
-            this.lblTimer.Location = new System.Drawing.Point(260, 342);
+            this.lblTimer.Location = new System.Drawing.Point(435, 556);
             this.lblTimer.Name = "lblTimer";
             this.lblTimer.Size = new System.Drawing.Size(97, 46);
             this.lblTimer.TabIndex = 0;
@@ -65,7 +69,7 @@
             this.listBox1.ItemHeight = 25;
             this.listBox1.Location = new System.Drawing.Point(22, 104);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(335, 204);
+            this.listBox1.Size = new System.Drawing.Size(510, 404);
             this.listBox1.TabIndex = 1;
             // 
             // timer1
@@ -76,7 +80,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(22, 324);
+            this.button1.Location = new System.Drawing.Point(20, 527);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 2;
@@ -86,7 +90,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(121, 383);
+            this.button2.Location = new System.Drawing.Point(119, 586);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 3;
@@ -96,7 +100,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(22, 353);
+            this.button3.Location = new System.Drawing.Point(20, 556);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 4;
@@ -106,7 +110,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(22, 383);
+            this.button4.Location = new System.Drawing.Point(119, 527);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 23);
             this.button4.TabIndex = 5;
@@ -116,7 +120,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(121, 354);
+            this.button5.Location = new System.Drawing.Point(119, 557);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(75, 23);
             this.button5.TabIndex = 6;
@@ -129,7 +133,7 @@
             this.lblGame.AutoSize = true;
             this.lblGame.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGame.ForeColor = System.Drawing.Color.White;
-            this.lblGame.Location = new System.Drawing.Point(134, 9);
+            this.lblGame.Location = new System.Drawing.Point(14, 9);
             this.lblGame.Name = "lblGame";
             this.lblGame.Size = new System.Drawing.Size(97, 46);
             this.lblGame.TabIndex = 7;
@@ -140,7 +144,7 @@
             this.lblCategory.AutoSize = true;
             this.lblCategory.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCategory.ForeColor = System.Drawing.Color.White;
-            this.lblCategory.Location = new System.Drawing.Point(134, 55);
+            this.lblCategory.Location = new System.Drawing.Point(14, 55);
             this.lblCategory.Name = "lblCategory";
             this.lblCategory.Size = new System.Drawing.Size(97, 46);
             this.lblCategory.TabIndex = 8;
@@ -151,7 +155,7 @@
             this.lblPrevSeg.AutoSize = true;
             this.lblPrevSeg.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPrevSeg.ForeColor = System.Drawing.Color.White;
-            this.lblPrevSeg.Location = new System.Drawing.Point(40, 409);
+            this.lblPrevSeg.Location = new System.Drawing.Point(12, 612);
             this.lblPrevSeg.Name = "lblPrevSeg";
             this.lblPrevSeg.Size = new System.Drawing.Size(97, 46);
             this.lblPrevSeg.TabIndex = 9;
@@ -162,7 +166,7 @@
             this.lblSOB.AutoSize = true;
             this.lblSOB.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSOB.ForeColor = System.Drawing.Color.White;
-            this.lblSOB.Location = new System.Drawing.Point(40, 455);
+            this.lblSOB.Location = new System.Drawing.Point(12, 658);
             this.lblSOB.Name = "lblSOB";
             this.lblSOB.Size = new System.Drawing.Size(97, 46);
             this.lblSOB.TabIndex = 10;
@@ -173,7 +177,7 @@
             this.lblPTS.AutoSize = true;
             this.lblPTS.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPTS.ForeColor = System.Drawing.Color.White;
-            this.lblPTS.Location = new System.Drawing.Point(40, 501);
+            this.lblPTS.Location = new System.Drawing.Point(14, 704);
             this.lblPTS.Name = "lblPTS";
             this.lblPTS.Size = new System.Drawing.Size(97, 46);
             this.lblPTS.TabIndex = 11;
@@ -181,20 +185,62 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(121, 324);
+            this.button6.Location = new System.Drawing.Point(214, 527);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 23);
+            this.button6.Size = new System.Drawing.Size(92, 23);
             this.button6.TabIndex = 12;
             this.button6.Text = "Save";
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(20, 585);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(75, 23);
+            this.button7.TabIndex = 13;
+            this.button7.Text = "Redo";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // lblComparison
+            // 
+            this.lblComparison.AutoSize = true;
+            this.lblComparison.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblComparison.ForeColor = System.Drawing.Color.White;
+            this.lblComparison.Location = new System.Drawing.Point(611, 28);
+            this.lblComparison.Name = "lblComparison";
+            this.lblComparison.Size = new System.Drawing.Size(97, 46);
+            this.lblComparison.TabIndex = 15;
+            this.lblComparison.Text = "0.00";
+            // 
+            // graphPanel1
+            // 
+            this.graphPanel1.Location = new System.Drawing.Point(538, 104);
+            this.graphPanel1.Name = "graphPanel1";
+            this.graphPanel1.Size = new System.Drawing.Size(320, 224);
+            this.graphPanel1.TabIndex = 14;
+            // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(214, 556);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(92, 23);
+            this.button8.TabIndex = 16;
+            this.button8.Text = "Undo Pauses";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(378, 544);
+            this.ClientSize = new System.Drawing.Size(1200, 752);
+            this.Controls.Add(this.button8);
+            this.Controls.Add(this.lblComparison);
+            this.Controls.Add(this.graphPanel1);
+            this.Controls.Add(this.button7);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.lblPTS);
             this.Controls.Add(this.lblSOB);
@@ -208,8 +254,10 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.lblTimer);
+            this.DoubleBuffered = true;
             this.Name = "Form1";
             this.Text = "LiveSplit One";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -231,6 +279,10 @@
         private System.Windows.Forms.Label lblSOB;
         private System.Windows.Forms.Label lblPTS;
         private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button7;
+        private GraphPanel graphPanel1;
+        private System.Windows.Forms.Label lblComparison;
+        private System.Windows.Forms.Button button8;
     }
 }
 
